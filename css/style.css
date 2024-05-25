@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* color: black; */
+    box-sizing: border-box;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12;
+}
+body{
+    background: white
+}
+
+.hedear_inner_content{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.barra_navegacao{
+    /* background-color: #2b2a2a; */
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background: rgb(31, 31, 31);
+
+    box-shadow: 10px 0px 10px black;
+}
+.barra_navegacao>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    position: relative;
+    
+}
+.logo{
+    color: white;
+    box-shadow: 10px 3px 50px white;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+    padding: 1rem;
+
+}
+.logo>span{
+    color: blue;
+    box-shadow: 10px 3px 50px blue;
+    border-top-left-radius: 50px;
+    padding: 1rem;
+}
+
+/* Estilizando a lista */
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+/* Estilizando os icons */
+.icons{
+    display: flex;
+    align-items: center;
+}
+.icons img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.icons img:first-child{
+    margin-right: 1rem;
+}
+
+/* Estilizar cada elemento */
+nav ul li{
+    color: white;
+    margin-right: 1rem;
+    cursor: pointer;
+
+}
+nav ul li:hover{
+    border-bottom: 3px solid blue;
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+.btn_menu{
+    display: none;
+}
+.btn_view_more{
+    border: none;
+    padding: 10px;
+    height: 1.3cm;
+    width: 300px;
+    font-size: 12pt;
+    /* border-radius: 50px; */
+    background: rgb(2, 67, 165);
+    /* border: 1px solid black; */
+    color: white;
+    transition: all 0.2s;
+}
+
+.btn_view_more:hover{
+    border: none;
+    padding: 10px;
+    height: 1.3cm;
+    width: 300px; 
+    font-size: 12pt;
+    /* border-radius: 50px; */
+    background: rgb(2, 54, 131);
+    /* border: 1px solid black; */
+    cursor: pointer;
+    color: white;
+    transition: all 0.2s;
+    
+}
+.header_bottom-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.header_buttom_left{
+    height: 100%;
+    flex-basis: 50%; /*para ele dividir o espaco com o outro lado*/
+}
+
+.header_buttom_left h2{
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.header_buttom_left p{
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+.header_buttom_right{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_buttom_right img{
+    width: 115%;
+    
+}
+
+/* Criando uma Media Query */
+@media (max-width:800px) {
+    .logo{
+        font-size:1.2rem;
+    }
+    .header_bottom-side{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 4rem;
+    }
+    nav{
+        position: absolute;
+        background: #222222;
+        width: 100%;
+        top: 46px;
+        display: none; /*Para esconder o menu*/
+    }
+    .show_menu nav{
+        display: block;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li{
+        text-align: center;
+        padding: 0.8rem;
+    }
+    .btn_menu{
+        display: block;
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>DigiTec | E-commerce</title>
+</head>
+<body>
+    <div class="barra_navegacao show_menu">
+        <div class="hedear_inner_content">
+            <h1 class="logo"><span>Digi</span>Tec</h1>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Productos</li>
+                    <li>Sobre</li>
+                    <li>Contacte</li>
+                    <li>Conta</li>
+                </ul>
+            </nav>
+            <!-- Imagens -->
+            <div class="icons">
+                <img src="imgs/cart.png">
+                <img src="icon/menu.png" class="btn_menu">
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Addi um header -->
+    <header>
+        <div class="header_content">
+            <div class="header_bottom-side">
+                <div class="header_buttom_left">
+                    <h2>Bem-vindo a Digitec, onde recebes productos de ponta e com qualidade!</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Velit aliquid cum commodi exercitationem porro, tempore error!
+                    Tempore odit, rerum aspernatur dolorem nemo ea animi autem ullam quia,
+                    necessitatibus qui temporibus?</p>
+                    <!-- Adicionando um botao de ver mais -->
+                    <button class="btn_view_more">Ver Agora &#8594;</button>
+                </div>
+
+                <div class="header_buttom_right">
+                    <img src="imgs/pc.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- Media -->
+    <main>
+
+    </main>
+    <script>
+        const barra_navegacao = document.querySelector(".barra_navegacao")
+        const menuButton = document.querySelector(".btn_menu")
+        menuButton.addEventListener("click", ()=>{
+            barra_navegacao.classList.toggle("show_menu")
+        })
+    </script>
+</body>
+</html>
