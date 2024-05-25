@@ -256,3 +256,18 @@ main{
     font-weight: 600;
     margin-top: 0.4rem;
 }
+.preco{
+    font-weight: 600;
+}
+.Screen_smartWatch{
+    background-color: #2b2a2a;
+}
+.smartWatch {
+    color: white;
+    flex-direction: row-reverse;
+    padding: 5rem 1rem;
+}
+
+.smartWatch img{
+    max-width: 500px;
+}
