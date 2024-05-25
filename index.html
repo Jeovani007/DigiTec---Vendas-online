@@ -49,15 +49,77 @@
             </div>
         </div>
     </header>
-    <!-- Media -->
+    <!-- Meain page -->
     <main>
+        <div class="gray_background">
+            <!-- Onde estara os produtos principais da nossa pagina cinza -->
+            <div class="pageContent">
+
+                <div class="img1_pageContent cols-3">
+                    <img src="/imgs/products/product-1.png" alt="">
+                    <img src="/imgs/products/product-2.png" alt="">
+                    <img src="/imgs/products/product-3.png" alt="">
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+
+        <div class = "pageContent2">
+            <div class="Itemns">
+                <h3 class = "section-title">Productos Selecionados</h3>
+                <div class = "underline"></div>
+                
+                <div class="img1_pageContent cols-4">
+
+                    <!-- Esse é o primeiro peoguto -->
+                    <div class="products">
+
+                        <img src="/imgs/products/product-4.png">
+                        <p class="nome_produto">Combo Gamer Meetion</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="preco">200,000.00 <span>KZs</span></p>
+
+                    </div>
+
+                    <div class="products">
+                        
+                        <img src="/imgs/products/product-5.png">
+                        <p class="nome_produto">Combo Gamer Meetion</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="preco">200,000.00 <span>KZs</span></p>
+
+                    </div>
+
+                    <div class="products">
+                        
+                        <img src="/imgs/products/product-6.png">
+                        <p class="nome_produto">Combo Gamer Meetion</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="preco">200,000.00 <span>KZs</span></p>
+
+                    </div>
+
+                    <div class="products">
+                        
+                        <img src="/imgs/products/product-7.png">
+                        <p class="nome_produto">Combo Gamer Meetion</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="preco">200,000.00 <span>KZs</span></p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
     </main>
     <script>
         const barra_navegacao = document.querySelector(".barra_navegacao")
         const menuButton = document.querySelector(".btn_menu")
         menuButton.addEventListener("click", ()=>{
-            barra_navegacao.classList.toggle("show_menu")
+            barra_navegacao.classList.toggle("show_menu") /*Começa com nivel baixo*/
         })
     </script>
 </body>

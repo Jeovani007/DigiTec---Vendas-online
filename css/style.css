@@ -181,3 +181,78 @@ nav ul li:hover{
         display: block;
     }
 }
+
+/*Main content*/
+.gray_background{
+    background: #222222;
+}
+.pageContent{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.img1_pageContent{
+    display: grid;
+    align-items:center;
+    justify-content: center;
+    padding: 4rem 1rem;
+}
+.img1_pageContent img{
+    width: 70%;
+    height: 100%;
+}
+
+.cols-3{
+    grid-template-columns: repeat(3, 1fr);
+    gap:3rem; 
+}
+.colos-3 img{
+    max-width: 100%;
+}
+.cols-4{
+    grid-template-columns: repeat(4, 1fr);
+    gap:1rem;    
+}
+.products img{
+    width: 6 0%;
+    height: 50%;
+    
+    
+}
+
+.img1_pageContent>* {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.img1_pageContent>*:hover{
+    transform: translateY(-20px);
+}
+.section-title{
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.8rem ;
+}
+.underline{
+    height: 5px;
+    width: 100px;
+    background: rgb(23, 112, 245);
+    border-radius: 100px;
+    margin: 8px auto 0 auto;
+}
+.rate{
+    color: rgb(255, 208, 0);
+    font-size: 1.3rem;
+}
+main{
+    background:rgb(230, 228, 228) ;
+}
+.products{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nome_produto{
+    font-weight: 600;
+    margin-top: 0.4rem;
+}
