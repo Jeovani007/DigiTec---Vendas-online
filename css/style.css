@@ -144,11 +144,9 @@ nav ul li:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.header_buttom_right img{
-    width: 115%;
     
 }
+
 
 /* Criando uma Media Query */
 @media (max-width:800px) {
@@ -221,10 +219,10 @@ nav ul li:hover{
 
 .img1_pageContent>* {
     cursor: pointer;
-    transition: all 0.2s;
+    /* transition: all 0.2s; */
 }
 .img1_pageContent>*:hover{
-    transform: translateY(-20px);
+    /* transform: translateY(-20px); */
 }
 .section-title{
     text-align: center;
@@ -270,4 +268,207 @@ main{
 
 .smartWatch img{
     max-width: 500px;
+}
+
+
+/* Media queries para o main */
+@media (max-width: 800px) {
+    .section-title{
+        font-size: 1rem;
+    }
+    .cols-3{
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .cols-4{
+        grid-template-columns: repeat(2,1fr);
+               
+    }
+
+    .nome_produto, .preco, .rate{
+        max-height: 1rem;
+        overflow: hidden;
+        font-size: 0.8rem;
+    }
+    .smartWatch {
+        flex-direction: column-reverse;
+    }
+
+    .smartWatch img{
+        margin-bottom: 4rem;
+    }
+    
+}
+
+/* Estilizando os testemunho */
+.testemunhos{
+    display: flex;
+    padding: 4rem 1rem;
+    justify-content: space-evenly;
+}
+
+.testemunho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 30%;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.514);
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.testemunho:hover{
+    transform: translateY(-20px);
+}
+.testemunho p{
+    margin: 5px 0;
+}
+.testemunhoimg{
+    border-radius: 100px;
+    border: 2px solid rgb(28, 66, 235);
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testemunhoimg img{
+    width: 100px;
+    height: 100px;
+    border: 1.5px solid rgb(28, 66, 235);
+    border-radius: 100px;
+    
+}
+.testemunho p:last-child{
+    font-weight: bold;
+}
+
+/* Para os testemunhos */
+@media (max-width: 800px) {
+
+    .testemunhos{
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+.Myfooter{
+    background-color: #2b2a2a;
+     
+}
+.logoFooter{
+    width: 250px;
+}
+
+/* Mechendo com o footer */
+.footerContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+    padding: 4rem 1rem;
+    gap: 100px;
+}
+.downloadoption>*{
+    margin: 1rem 0;
+}
+
+.downloadoption>p:first-child{
+    font-weight: bold;
+    color: white;
+}
+.downloadoption>div{
+    display: flex;
+}
+.downloadoption>div img{
+    width: 180px;
+}
+
+.logoFooter{
+    text-align: center;
+}
+
+.logoFooter p{
+    margin-top: 40px;
+}
+.links_footer h3{
+    color: white;
+    margin-bottom: 0.8rem;
+}
+.links_footer ul li{list-style: none;}
+
+.links_footer ul{
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+.bar_copyright{
+    width: 70%;
+    margin: 10px auto;
+    color: rgb(233, 233, 233);
+}
+.text-copyright{
+    color: white;
+    text-align: center;
+   padding: 10px;
+
+}
+/* Usando o media query no footer */
+@media (max-width: 800px) {
+    .footerContent{
+        display: inline;
+        font-size: 0.8rem;
+    }
+    .footerContent>div{
+        padding: 1rem;
+    }
+
+    .downloadoption>div{
+        display: inline;
+    }
+
+    .downloadoption>div img{
+        width: 120px;
+    }
+
+    .text-copyright{
+        font-size: 0.8rem;
+    
+    }
+}
+
+.btnComprar{
+    border: none;
+    padding: 10px;
+    height: 1.3cm;
+    width: 250px; 
+    font-size: 12pt;
+    border-radius: 30px;
+    border: 1px solid rgb(2, 54, 131);
+    background: none;
+    color: black;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.btnComprar:hover{
+    background: rgb(2, 54, 131);
+    color: white;
+ 
+    /* transform: translate(4); */
+}
+
+.header_buttom_right img{
+    width: 115%;
 }
