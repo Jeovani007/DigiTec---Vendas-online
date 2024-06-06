@@ -7,365 +7,267 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 12;
 }
-body{
-    background: white
-}
-
-.hedear_inner_content{
-    max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-
-.barra_navegacao{
-    /* background-color: #2b2a2a; */
+header{
     padding: 1rem;
     position: sticky;
     top: 0;
     z-index: 99;
     background: rgb(31, 31, 31);
-
+    color: white;
     box-shadow: 10px 0px 10px black;
-}
-.barra_navegacao>div{
     display: flex;
+    gap: 50px;
+    padding: 35px;
+}
+
+header nav {
+    display: flex;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between; 
-    position: relative;
+}
+header nav > div{
+    margin-left: 400px;
+}
+header nav > ul{
+    display: flex;
+    gap: 30px;
+    padding: 10px;
     
 }
-.logo{
-    color: white;
-    box-shadow: 10px 3px 50px white;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-
-    padding: 1rem;
-
-}
-.logo>span{
-    color: blue;
-    box-shadow: 10px 3px 50px blue;
-    border-top-left-radius: 50px;
-    padding: 1rem;
-}
-
-/* Estilizando a lista */
-nav ul{
-    display: flex;
+header nav > ul li{
     list-style: none;
-    align-items: center;
-    cursor: pointer;
-    
-}
-
-/* Estilizando os icons */
-.icons{
-    display: flex;
-    align-items: center;
-}
-.icons img{
-    width: 30px;
-    cursor: pointer;
-}
-
-.icons img:first-child{
-    margin-right: 1rem;
-}
-
-/* Estilizar cada elemento */
-nav ul li{
-    color: white;
-    margin-right: 1rem;
-    cursor: pointer;
-
-}
-nav ul li:hover{
-    border-bottom: 3px solid blue;
-    transform: translateY(-5px);
-    transition: all 0.2s;
-    font-weight: bold;
-}
-
-.btn_menu{
-    display: none;
-}
-.btn_view_more{
-    border: none;
-    padding: 10px;
-    height: 1.3cm;
-    width: 300px;
     font-size: 12pt;
-    /* border-radius: 50px; */
-    background: rgb(2, 67, 165);
-    /* border: 1px solid black; */
-    color: white;
-    transition: all 0.2s;
-}
-
-.btn_view_more:hover{
-    border: none;
-    padding: 10px;
-    height: 1.3cm;
-    width: 300px; 
-    font-size: 12pt;
-    /* border-radius: 50px; */
-    background: rgb(2, 54, 131);
-    /* border: 1px solid black; */
     cursor: pointer;
+}
+header nav > ul li:hover{
+    list-style: none;
+    font-size: 12pt;
+    cursor: pointer;
+    color: rgb(143, 143, 143);
+}
+
+header div > button{
+    cursor: pointer;
+    border: none;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(31, 31, 31);
     color: white;
-    transition: all 0.2s;
+    font-size: 12pt;
+    margin-left: 20px;
+}
+header div> button:hover{
+    background-color: rgb(56, 55, 55);
+    color: rgb(255, 255, 255);
+}
+.Apresentacao{
+
+    background: url('../img/Imagem colada (3).png');
+    background-position:center ;
+    position: relative;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
-.header_bottom-side{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-}
-.header_buttom_left{
-    height: 100%;
-    flex-basis: 50%; /*para ele dividir o espaco com o outro lado*/
+.Logo{
+    font-family: url('../Calligraffitti/Calligraffitti-Regular.ttf');
 }
 
-.header_buttom_left h2{
-    font-size: 3.2rem;
-    margin-bottom: 1.5rem;
+/* Definindo a fonte personalizada */
+@font-face {
+    font-family: 'Calligraffitti';
+    src: url('../Calligraffitti/Calligraffitti-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Aplicando a fonte ao h1 */
+.Logo {
+    font-family: 'Calligraffitti', sans-serif;
+  }
+.Apresentacao h2{
+    color: rgba(255, 255, 255, 0.904);
+    font-size: 40pt;
+    margin-left: 40px;
+}
+.Apresentacao input{
+    border: 1px solid rgba(255, 255, 255, 0.904);
+    height: 40px;
+    width: 500px;
+    font-size: 12pt;
+    outline-style: none;
+    padding: 20px;
+}
+.Apresentacao div{ margin-top: 40px;}
+.Apresentacao button{
+    height: 45px;
+    width: 120px;
+    font-size: 12pt;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    color: white;
+    margin-left: -10px;
+    cursor:pointer;
+
 }
 
-.header_buttom_left p{
-    line-height: 1.5rem;
-    margin-bottom: 1.5rem;
-    text-align: justify;
-}
-.header_buttom_right{
-    flex-basis: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-
-/* Criando uma Media Query */
-@media (max-width:800px) {
-    .logo{
-        font-size:1.2rem;
-    }
-    .header_bottom-side{
-        flex-direction: column;
-        text-align: center;
-        padding-top: 4rem;
-    }
-    nav{
-        position: absolute;
-        background: #222222;
-        width: 100%;
-        top: 46px;
-        display: none; /*Para esconder o menu*/
-    }
-    .show_menu nav{
-        display: block;
-    }
-    nav ul{
-        flex-direction: column;
-    }
-    nav ul li{
-        text-align: center;
-        padding: 0.8rem;
-    }
-    .btn_menu{
-        display: block;
-    }
+/* Configuarando os meu produtos */
+.proutosContent .produto > button{
+    cursor: pointer;
+    border: none;
+    height: 60px;
+    width: 250px;
+    font-size: 12pt;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    color: white;
+    margin-left: -10px;
+    margin-top: 10px;
 }
 
-/*Main content*/
-.gray_background{
-    background: #222222;
-}
-.pageContent{
-    max-width: 1280px;
-    margin: 0 auto;
-}
-.img1_pageContent{
+.proutosContent{
     display: grid;
     align-items:center;
     justify-content: center;
     padding: 4rem 1rem;
-}
-.img1_pageContent img{
-    width: 70%;
-    height: 100%;
-}
-
-.cols-3{
-    grid-template-columns: repeat(3, 1fr);
-    gap:3rem; 
-}
-.colos-3 img{
-    max-width: 100%;
-}
-.cols-4{
-    grid-template-columns: repeat(4, 1fr);
-    gap:1rem;    
-}
-.products img{
-    width: 6 0%;
-    height: 50%;
-    
-    
-}
-
-.img1_pageContent>* {
     cursor: pointer;
-    /* transition: all 0.2s; */
 }
-.img1_pageContent>*:hover{
-    /* transform: translateY(-20px); */
-}
-.section-title{
-    text-align: center;
-    margin-top: 4rem;
-    font-size: 1.8rem ;
-}
-.underline{
-    height: 5px;
-    width: 100px;
-    background: rgb(23, 112, 245);
-    border-radius: 100px;
-    margin: 8px auto 0 auto;
-}
-.rate{
-    color: rgb(255, 208, 0);
-    font-size: 1.3rem;
-}
-main{
-    background:rgb(230, 228, 228) ;
-}
-.products{
+
+.produto{
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px ;
+    height: 500px;
 }
+
+.produto img{
+    width: 90%;
+    height: 90%;
+    /* border: 1px solid grey; */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.452);
+    
+}
+
 .nome_produto{
     font-weight: 600;
     margin-top: 0.4rem;
+    text-align: center;
+    font-size: 12pt;
 }
 .preco{
     font-weight: 600;
 }
-.Screen_smartWatch{
-    background-color: #2b2a2a;
-}
-.smartWatch {
-    color: white;
-    flex-direction: row-reverse;
-    padding: 5rem 1rem;
+.rate{
+    color: rgb(255, 208, 0);
+    font-size: 1.3rem;
 }
 
-.smartWatch img{
-    max-width: 500px;
-}
-
-
-/* Media queries para o main */
-@media (max-width: 800px) {
-    .section-title{
-        font-size: 1rem;
-    }
-    .cols-3{
-        display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-    }
-
-    .cols-4{
-        grid-template-columns: repeat(2,1fr);
-               
-    }
-
-    .nome_produto, .preco, .rate{
-        max-height: 1rem;
-        overflow: hidden;
-        font-size: 0.8rem;
-    }
-    .smartWatch {
-        flex-direction: column-reverse;
-    }
-
-    .smartWatch img{
-        margin-bottom: 4rem;
-    }
-    
-}
-
-/* Estilizando os testemunho */
-.testemunhos{
+.itemns{
+    background-color: rgb(255, 255, 255);
     display: flex;
-    padding: 4rem 1rem;
-    justify-content: space-evenly;
 }
 
-.testemunho{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-basis: 30%;
-    text-align: center;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.514);
-    padding: 1rem;
-    border-radius: 1rem;
-    transition: all 0.2s;
-    cursor: pointer;
-}
 
-.testemunho:hover{
-    transform: translateY(-20px);
-}
-.testemunho p{
-    margin: 5px 0;
-}
-.testemunhoimg{
-    border-radius: 100px;
-    border: 2px solid rgb(28, 66, 235);
-    width: 120px;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.testemunhoimg img{
-    width: 100px;
-    height: 100px;
-    border: 1.5px solid rgb(28, 66, 235);
-    border-radius: 100px;
-    
-}
-.testemunho p:last-child{
-    font-weight: bold;
-}
+/* Fim da Configuaracoes os meu produtos*/
 
-/* Para os testemunhos */
-@media (max-width: 800px) {
-
-    .testemunhos{
-        flex-direction: column;
-        gap: 3rem;
-    }
-}
+/* Configuracao do footer */
 .Myfooter{
-    background-color: #2b2a2a;
-     
+    background-color: rgb(31, 31, 31);
+    margin-top: 100px;
 }
 .logoFooter{
     width: 250px;
 }
 
+
+.Testemunhos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50vh;
+
+}
+.Testemunhos .testemunho{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 40px;
+    text-align: justify;
+    box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.452); 
+    cursor: pointer;
+}
+.Testemunhos .testemunho> .testemunhoimg{
+    background: url('/imgs/p1.avif');
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 200px;
+
+}
+
+.Testemunhos .testemunho> .testemunhoimg1{
+    background: url('/imgs/f1.jpeg');
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 200px;
+}
+.temas{
+    margin-top: 20px;
+    text-align: center;
+}
+.barra1{
+    margin: auto;
+    height: 4.5px;
+    background-color: rgb(31, 31, 31);
+    width: 80px;
+    border-radius: 100px;
+    margin-bottom: 0px;
+}
+/* .points{ margin: 40px; justify-content: space-between;} */
+.barra{
+    margin: auto;
+    height: 4.5px;
+    background-color: rgb(31, 31, 31);
+    width: 80px;
+    border-radius: 100px;
+    margin-bottom: 50px;
+}
+.Testemunhos .testemunho> .testemunhoimg2{
+    background: url('/imgs/p2.webp');
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 200px;
+
+}
+
+.testemunho{
+    width: 400px;
+}
+
+.testemunho p{
+    margin-top: 15px;
+}
 /* Mechendo com o footer */
 .footerContent{
     display: flex;
@@ -417,58 +319,4 @@ main{
     text-align: center;
    padding: 10px;
 
-}
-/* Usando o media query no footer */
-@media (max-width: 800px) {
-    .footerContent{
-        display: inline;
-        font-size: 0.8rem;
-    }
-    .footerContent>div{
-        padding: 1rem;
-    }
-
-    .downloadoption>div{
-        display: inline;
-    }
-
-    .downloadoption>div img{
-        width: 120px;
-    }
-
-    .text-copyright{
-        font-size: 0.8rem;
-    
-    }
-}
-
-.btnComprar{
-    border: none;
-    padding: 10px;
-    height: 1.3cm;
-    width: 250px; 
-    font-size: 12pt;
-    border-radius: 30px;
-    border: 1px solid rgb(2, 54, 131);
-    background: none;
-    color: black;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: all 0.2s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-
-.btnComprar:hover{
-    background: rgb(2, 54, 131);
-    color: white;
- 
-    /* transform: translate(4); */
-}
-
-.header_buttom_right img{
-    width: 115%;
 }
